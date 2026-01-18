@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pring Coffee</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+        @keyframes move{
+        0% {
+            transform: rotate(0deg);
+           
+        }
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body{
+            font-family:  "Roboto Slab", sans-serif;
+            line-height: 1.7;
+            color: #333;
+           
+        }
+
+        header{
+            color: black;
+            position: fixed;
+            width: 100%;
+            padding: 16px;
+            background-color: #cabbbb;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cabbbb;
+            padding: 16px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 250px;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: auto;
+        }
+        .new-drink{
+            height: 180px;
+            width: 160px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
+        #home {
+            padding: 40px;
+            /* min-height: calc(100vh - 80px); */
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f0e8;
+        }
+
+        .home-content {
+            max-width: 800px;
+            text-align: center;
+        }
+        .home-content h1{
+            font-size: 70px;
+            font-family:'Gill Sans MT';
+        }
+        .home-content p{
+            margin-bottom: 20px;
+        }
+        .order-btn{
+            padding: 15px;
+            border-radius: 8px;
+            width: 150px;
+            font-size: 20px;
+            font-family: "Roboto Slab", serif;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            background-color: #8ba888;
+            border: none;
+            
+        }
+        .order-btn:hover{
+            color: white;
+            transform: scale(1.15);
+        }
+        .order-btn:active{
+            transform: scale(0.95)
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Nigga Coffee</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#coffee">Coffee</a></li>
+                <li><a href="#matcha">Matcha</a></li>
+                <li><a href="#tea">Tea</a></li>
+                <li><a href="#smoothie">Smoothies</a></li>
+                <input type="text" placeholder="Search...">
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="home-content">
+            <h1>Try our new drink</h1>
+            <h2>Matcha Coconut Cream</h2>
+                <img src="https://www.jenki.co.uk/cdn/shop/articles/coconutcloudmatcha.jpg?v=1716821504" class="new-drink">
+            <p>Discover our latest creation: Coconut Matcha. A perfect blend of creamy coconut and premium matcha.</p>
+            <button class="order-btn">Order now</button>
+        </div>
+    </section>
+
+    <section id="coffee">
+        
+    </section>
+</body>
+</html>
